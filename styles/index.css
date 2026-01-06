@@ -1,0 +1,70 @@
+@font-face {
+	font-family: Geist;
+	src: url(../fonts/Geist-Medium.woff2);
+}
+
+body {
+	background-color: #010101;
+	margin: 0px;
+	overflow-y: hidden;
+}
+
+.container {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	/* Centers horizontally along the main axis */
+	align-items: center;
+	/* Centers vertically along the cross axis */
+	height: 100vh;
+}
+
+.lines {
+	margin: 0px 0px;
+	width: 60vw;
+	font-size: 4.5vw;
+	text-align: justify;
+	text-justify: inter-word;
+	text-align-last: justify;
+	transition: font-size 0.5s;
+}
+
+#line1 {
+	font-family: Geist;
+}
+
+/* ---------- ANIMATIONS ----------*/
+
+@keyframes colorTransition {
+	0% {
+		background-color: red;
+	}
+
+	25% {
+		background-color: yellow;
+	}
+
+	50% {
+		background-color: blue;
+	}
+
+	100% {
+		background-color: green;
+	}
+}
+
+/* ---------- RESPONSIVENESS ----------*/
+
+@media screen and (max-width: 800px) {
+	.lines {
+		width: 90vw;
+		font-size: 7.5vw;
+	}
+}
+
+@media screen and (max-height: 400px) {
+	.lines {
+		width: 70vw;
+		font-size: 4.5vw;
+	}
+}
