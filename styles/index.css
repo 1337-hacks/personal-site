@@ -9,6 +9,19 @@ body {
 	overflow-y: hidden;
 }
 
+a {
+	color: white;
+	text-decoration-line: none;
+}
+
+a:hover {
+	animation-name: colorTransition;
+	animation-duration: 2s;
+	animation-iteration-count: infinite;
+	animation-timing-function: linear;
+}
+
+
 .container {
 	display: flex;
 	flex-direction: column;
@@ -27,29 +40,23 @@ body {
 	text-justify: inter-word;
 	text-align-last: justify;
 	transition: font-size 0.5s;
-}
-
-#line1 {
 	font-family: Geist;
 }
+
 
 /* ---------- ANIMATIONS ----------*/
 
 @keyframes colorTransition {
 	0% {
-		background-color: red;
-	}
-
-	25% {
-		background-color: yellow;
+		color: white;
 	}
 
 	50% {
-		background-color: blue;
+		color: blue;
 	}
 
 	100% {
-		background-color: green;
+		color: white;
 	}
 }
 
